@@ -14,22 +14,15 @@
 </head>
 <body>
 
-  <!-- ─────────────────────────────────────────
-       NAVIGATION BAR
-  ───────────────────────────────────────── -->
+  <!-- NAVIGATION BAR -->
   <nav class="navbar">
-    <!-- Logo / brand -->
     <a href="index.html" class="nav-logo">DG.</a>
-
-    <!-- Desktop links -->
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-
-    <!-- Mobile hamburger -->
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span>
       <span></span>
@@ -37,38 +30,30 @@
     </button>
   </nav>
 
-  <!-- ─────────────────────────────────────────
-       HERO SECTION
-  ───────────────────────────────────────── -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container">
       <div class="hero__inner">
 
-        <!-- ── Left: Text content ── -->
+        <!-- Left: Text content -->
         <div class="hero__content">
-          <!-- Greeting chip -->
           <div class="hero__greeting">
-            <!-- Wave emoji -->
             <span>👋</span> Hello, World!
           </div>
 
-          <!-- Main heading -->
           <h1 class="hero__title">
             I'm <span>Deep Gada</span>,<br />
             AI &amp; Web Enthusiast.
           </h1>
 
-          <!-- Short introduction -->
           <p class="hero__description">
             Computer Diploma Student at KJ Somaiya Polytechnic | Computer Engineering Student
             | Exploring AI, Web Tech &amp; Software Development.
           </p>
 
-          <!-- Info badges — branch & college -->
+          <!-- Info badges -->
           <div class="hero__info">
-            <!-- Branch badge -->
             <span class="hero__badge">
-              <!-- Computer icon SVG -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                 <line x1="8" y1="21" x2="16" y2="21"/>
@@ -76,10 +61,7 @@
               </svg>
               Diploma — Computer Engineering
             </span>
-
-            <!-- College badge -->
             <span class="hero__badge">
-              <!-- School icon SVG -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                 <polyline points="9 22 9 12 15 12 15 22"/>
@@ -88,11 +70,10 @@
             </span>
           </div>
 
-          <!-- Call-to-action buttons -->
+          <!-- CTA buttons -->
           <div class="hero__cta">
             <a href="about.html" class="btn btn-primary">
               About Me
-              <!-- Arrow icon -->
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"/>
                 <polyline points="12 5 19 12 12 19"/>
@@ -102,19 +83,14 @@
           </div>
         </div>
 
-        <!-- ── Right: Avatar / Visual ── -->
+        <!-- Right: Avatar -->
         <div class="hero__visual">
           <div class="avatar-wrapper">
-            <!-- Initials avatar -->
             <div class="avatar-initials">DG</div>
-
-            <!-- Floating stat: Years of Study -->
             <div class="hero__stat hero__stat--1">
-              <span class="hero__stat__value">3+</span>
+              <span class="hero__stat__value">2+</span>
               <span class="hero__stat__label">Years of Study</span>
             </div>
-
-            <!-- Floating stat: Projects -->
             <div class="hero__stat hero__stat--2">
               <span class="hero__stat__value">10+</span>
               <span class="hero__stat__label">Projects Built</span>
@@ -122,50 +98,33 @@
           </div>
         </div>
 
-      </div><!-- /.hero__inner -->
-    </div><!-- /.container -->
+      </div>
+    </div>
   </section>
 
-
-  <!-- ─────────────────────────────────────────
-       JAVASCRIPT
-  ───────────────────────────────────────── -->
   <script>
-    /* ── Hamburger menu toggle ── */
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('navLinks');
-
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
-
-    // Close menu when a link is clicked (mobile UX)
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
         navLinks.classList.remove('open');
       });
     });
-
-    /* ── Scroll-reveal animation ── */
     const revealElements = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.15 });
-
     revealElements.forEach(el => revealObserver.observe(el));
-
-    /* ── Navbar scroll style ── */
     window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      navbar.style.boxShadow = window.scrollY > 10
-        ? '0 4px 30px rgba(0,0,0,0.4)'
-        : 'none';
+      document.querySelector('.navbar').style.boxShadow =
+        window.scrollY > 10 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
     });
   </script>
 </body>
