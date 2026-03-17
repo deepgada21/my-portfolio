@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Deep Gada — skills, education, and background." />
+  <title>About | Deep Gada Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─────────────────────────────────────────
+       NAVIGATION BAR
+  ───────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">DG.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─────────────────────────────────────────
+       PAGE HERO BANNER
+  ───────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section__tag">Get to Know Me</span>
+      <h1 class="page-hero__title">About <span>Me</span></h1>
+      <p class="page-hero__sub">A brief look at my journey, skills, and what drives me forward.</p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       BIO SECTION
+  ───────────────────────────────────────── -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="bio-grid">
+
+        <!-- ── Profile card (left) ── -->
+        <div class="profile-card card reveal">
+          <!-- Circular avatar with initials -->
+          <div class="profile-avatar">DG</div>
+          <p class="profile-card__name">Deep Gada</p>
+          <p class="profile-card__role">Diploma — Computer Engineering</p>
+
+          <!-- Quick detail pills -->
+          <div class="tech-tags" style="margin-top: 0.5rem;">
+            <span class="tech-tag">📍 Mumbai, India</span>
+            <span class="tech-tag">🎓 KJ Somaiya Polytechnic</span>
+            <span class="tech-tag">🤖 AI Enthusiast</span>
+            <span class="tech-tag">💼 Open to Internships</span>
+          </div>
+        </div>
+
+        <!-- ── Bio text (right) ── -->
+        <div class="bio-text reveal">
+          <h3>Hi, I'm Deep Gada! 👋</h3>
+          <p>
+            I'm currently pursuing a Diploma in Computer Engineering at KJ Somaiya Polytechnic,
+            where I've built solid skills in web development, Java, C/C++, and database management.
+            I'm genuinely passionate about Artificial Intelligence and love experimenting with
+            cutting-edge AI tools like ChatGPT and Google Gemini to level up my knowledge and skills.
+          </p>
+          <p>
+            I enjoy building modern, user-friendly web experiences and solving real-world problems
+            through code. I believe the best software blends logic with creativity — and I'm always
+            looking for opportunities to grow and learn.
+          </p>
+
+          <!-- Structured details grid -->
+          <div class="bio-details" style="margin-top: 1.5rem;">
+            <div class="bio-detail">
+              <span class="bio-detail__label">Full Name</span>
+              <span class="bio-detail__value">Deep Gada</span>
+            </div>
+            <div class="bio-detail">
+              <span class="bio-detail__label">Course</span>
+              <span class="bio-detail__value">Diploma in Computer Engineering</span>
+            </div>
+            <div class="bio-detail">
+              <span class="bio-detail__label">Institute</span>
+              <span class="bio-detail__value">KJ Somaiya Polytechnic</span>
+            </div>
+            <div class="bio-detail">
+              <span class="bio-detail__label">Interests</span>
+              <span class="bio-detail__value">AI, Web Development, Software Dev</span>
+            </div>
+            <div class="bio-detail">
+              <span class="bio-detail__label">AI Tools I Use</span>
+              <span class="bio-detail__value">ChatGPT, Google Gemini</span>
+            </div>
+            <div class="bio-detail">
+              <span class="bio-detail__label">Languages</span>
+              <span class="bio-detail__value">English, Hindi</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div style="margin-top: 1.8rem;">
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          </div>
+        </div>
+
+      </div><!-- /.bio-grid -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       EDUCATION SECTION
+  ───────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Academic Journey</span>
+        <h2 class="section__title">Education</h2>
+        <p class="section__subtitle">The academic milestones that have shaped my technical foundation.</p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline" style="max-width: 680px; margin-inline: auto;">
+
+        <!-- Item 1: Diploma -->  
+        <div class="timeline-item reveal">
+          <div class="card">
+            <span class="timeline-year">Currently Pursuing</span>
+            <p class="timeline-title">Diploma in Computer Engineering</p>
+            <p class="timeline-subtitle">KJ Somaiya Polytechnic, Mumbai</p>
+            <p style="font-size:0.85rem; color:var(--clr-text-muted); margin-top:0.5rem;">
+              Relevant subjects: HTML/CSS/JS, Java, C, C++, DBMS &amp; SQL, Data Structures
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /.timeline -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       SKILLS SECTION — Progress bars
+  ───────────────────────────────────────── -->
+  <section class="section" style="background: linear-gradient(180deg, transparent, rgba(108,99,255,0.04));">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">What I Know</span>
+        <h2 class="section__title">Skills</h2>
+        <p class="section__subtitle">Technical skills I've developed through coursework, projects, and self-study.</p>
+      </div>
+
+      <!-- Skill progress cards -->
+      <div class="skills-grid">
+
+        <!-- HTML -->
+        <div class="card skill-card reveal" data-delay="0">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">🌐</span>
+              <span class="skill-name">HTML5</span>
+            </div>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="95"></div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="card skill-card reveal" data-delay="100">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">🎨</span>
+              <span class="skill-name">CSS3 / Responsive Design</span>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="90"></div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="card skill-card reveal" data-delay="200">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">⚡</span>
+              <span class="skill-name">JavaScript (ES6+)</span>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="80"></div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="card skill-card reveal" data-delay="0">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">☕</span>
+              <span class="skill-name">Java</span>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="75"></div>
+          </div>
+        </div>
+
+        <!-- C / C++ -->
+        <div class="card skill-card reveal" data-delay="100">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">💡</span>
+              <span class="skill-name">C / C++</span>
+            </div>
+            <span class="skill-pct">72%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="72"></div>
+          </div>
+        </div>
+
+        <!-- SQL / DBMS -->
+        <div class="card skill-card reveal" data-delay="200">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">🗄️</span>
+              <span class="skill-name">SQL / DBMS</span>
+            </div>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="78"></div>
+          </div>
+        </div>
+
+        <!-- AI Tools -->
+        <div class="card skill-card reveal" data-delay="0">
+          <div class="skill-header">
+            <div class="skill-info">
+              <span class="skill-icon">🤖</span>
+              <span class="skill-name">AI Tools (ChatGPT, Gemini)</span>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-pct="88"></div>
+          </div>
+        </div>
+
+      </div><!-- /.skills-grid -->
+
+      <!-- Technologies tag cloud -->
+      <div class="section__header reveal" style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">
+        <h3 style="font-size: 1.1rem; color: var(--clr-text-muted); font-weight: 500;">Other Technologies &amp; Tools</h3>
+      </div>
+      <div class="tech-tags reveal">
+        <span class="tech-tag">ChatGPT</span>
+        <span class="tech-tag">Google Gemini</span>
+        <span class="tech-tag">Artificial Intelligence</span>
+        <span class="tech-tag">VS Code</span>
+        <span class="tech-tag">Git &amp; GitHub</span>
+        <span class="tech-tag">Bootstrap</span>
+        <span class="tech-tag">Figma</span>
+        <span class="tech-tag">Netlify</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">Prompt Engineering</span>
+      </div>
+
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ─────────────────────────────────────────
+       JAVASCRIPT
+  ───────────────────────────────────────── -->
+  <script>
+    /* ── Hamburger menu toggle ── */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    /* ── Scroll-reveal + progress bar animation ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+          // Animate progress bars inside the revealed element
+          entry.target.querySelectorAll('.progress-fill').forEach(bar => {
+            const pct = bar.getAttribute('data-pct');
+            // Small delay so the reveal animation plays first
+            setTimeout(() => { bar.style.width = pct + '%'; }, 300);
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    /* ── Navbar shadow on scroll ── */
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').style.boxShadow =
+        window.scrollY > 10 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
+    });
+  </script>
+</body>
+</html>
